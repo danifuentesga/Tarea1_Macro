@@ -874,11 +874,6 @@ library(knitr)
 #En SDEM, la sección "Clasificación de Microdatos" contiene los códigos sumarios 
 #más relevantes para el análisis.
 
-
-
-#Establecer el directorio de trabajo donde están los datos
-setwd("C:/Users/danif/Colmex maestria/SEGUNDO SEMESTRE/MACROECONOMIA II/TAREAS/TAREA 1")
-
 #Cargar la base de datos SDEM sin necesidad de escribir la ruta completa
 sdem <- read_csv("conjunto_de_datos_sdem_enoe_2024_2t.csv")
 
@@ -1319,7 +1314,6 @@ La tasas de desempleo obtenidas para cada trimestre son:
 
 ```{r tabla desempleo, result='asis', echo=FALSE, message=FALSE, warning=FALSE}
 # Establecer el directorio de trabajo
-setwd("C:/Users/danif/Colmex maestria/SEGUNDO SEMESTRE/MACROECONOMIA II/TAREAS/TAREA 1")
 
 # Cargar paquetes
 library(readr)       # Para leer archivos CSV
@@ -1383,8 +1377,6 @@ La tasa de subempleo la obtuvimos a partir de la formula:
 Las tasas de subempleo obtenidas para cada trimestre son:
 
 ```{r tabla_subempleo, result='asis', echo=FALSE, message=FALSE, warning=FALSE}
-
-setwd("C:/Users/danif/Colmex maestria/SEGUNDO SEMESTRE/MACROECONOMIA II/TAREAS/TAREA 1")
 
 # Cargar paquetes necesarios
 library(dplyr)
